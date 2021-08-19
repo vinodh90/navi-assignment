@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/loginLogImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_source_foreground" />
+
+    <com.dweepdroid.github.customview.NaviEditText
+        android:id="@+id/ownerNameEt"
+        style="@style/LoginEditText"
+        android:background="@drawable/bg_rounded_border"
+        android:drawableStart="@android:drawable/ic_lock_lock"
+        android:hint="@string/enter_owner_name"
+        android:imeOptions="actionNext"
+        android:drawableLeft="@android:drawable/ic_lock_lock" />
+
+    <com.dweepdroid.github.customview.NaviEditText
+        android:id="@+id/repoNameEt"
+        style="@style/LoginEditText"
+        android:drawableStart="@android:drawable/ic_input_add"
+        android:hint="@string/enter_repo_name"
+        android:imeOptions="actionDone"
+        android:drawableLeft="@android:drawable/ic_input_add" />
+
+    <com.dweepdroid.github.customview.NaviButton
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/btn_secondary_press"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/continue1"
+        android:textColor="@color/colorOnSecondary"
+        android:textSize="16dp"
+        android:textStyle="bold"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">navigithub</string>
+
+    <string name="light">light</string>
+    <string name="regular">regular</string>
+    <string name="medium">medium</string>
+    <string name="bold">bold</string>
+    <string name="italic">italic</string>
+    <string name="repo_details">Repo Details</string>
+    <string name="user_details">User Details</string>
+    <string name="closed_pull_requests">Closed Pull Requests</string>
+    <string name="enter_owner_name">Enter owner name</string>
+    <string name="enter_repo_name">Enter repo name</string>
+    <string name="navi1">navi1</string>
+    <string name="continue1">Continue</string>
+    <string name="vinodh90">vinodh90</string>
+    <string name="repo_name">repo name</string>
+    <string name="id">id</string>
+    <string name="name">name</string>
+
+</resources>

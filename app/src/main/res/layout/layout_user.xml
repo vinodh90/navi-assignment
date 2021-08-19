@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.dweepdroid.github.customview.NaviTextView
+        style="@style/TitleTextView"
+        android:text="@string/user_details"
+        app:ttf_type="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSecondary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/userAvatarImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/outline_source"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/userInfoLayout"
+            android:layout_toRightOf="@+id/userAvatarImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/userAvatarImg">
+
+
+            <com.dweepdroid.github.customview.NaviTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_text_size"
+                android:text="Name:"
+                app:ttf_type="bold"/>
+
+            <com.dweepdroid.github.customview.NaviTextView
+                android:id="@+id/userNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_text_size"
+                android:text="@string/name"
+                app:ttf_type="Roboto-Regular"/>
+
+            <com.dweepdroid.github.customview.NaviTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_text_size"
+                android:text="Id:"
+                android:layout_marginTop="8dp"
+                app:ttf_type="bold"/>
+
+            <com.dweepdroid.github.customview.NaviTextView
+                android:id="@+id/userNameId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_text_size"
+                android:text="@string/id"
+                app:ttf_type="Roboto-Regular"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

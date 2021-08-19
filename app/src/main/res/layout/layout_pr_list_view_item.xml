@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dweepdroid.github.customview.NaviTextView
+        android:id="@+id/prTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sub_title_text_size"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        app:ttf_type="bold"/>
+
+    <com.dweepdroid.github.customview.NaviTextView
+        android:id="@+id/prDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vertical_margin"
+        android:layout_marginRight="@dimen/vertical_margin"
+        app:ttf_type="@string/italic"/>
+
+    <com.dweepdroid.github.customview.NaviTextView
+        android:id="@+id/prCreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        app:ttf_type="@string/light"/>
+
+    <com.dweepdroid.github.customview.NaviTextView
+        android:id="@+id/prClosedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vertical_margin"
+        android:layout_marginRight="@dimen/vertical_margin"
+        app:ttf_type="@string/light"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorSecondary"/>
+
+</LinearLayout>
